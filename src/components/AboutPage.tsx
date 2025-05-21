@@ -131,7 +131,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="pixel-font text-xl mb-2 text-center">GAME MASTER</h3>
                     <div className="flex items-center justify-center space-x-2 mb-4">
                       <Calendar className="h-4 w-4 text-[var(--color-primary)]" />
-                      <span className="text-sm">Birthday: May 15th</span>
+                      <span className="text-sm">Birthday: May 22nd</span>
                     </div>
                     <div className="text-center">
                       <p className="mb-2">Gaming since 2005</p>

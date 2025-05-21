@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Heart, Trophy, Clock } from 'lucide-react';
+import ed from './eldenRing.jpeg';
+import gow from './GoW.jpeg';
+import rdr from './RDR.jpeg';
+import tw from './TW3.jpeg';
+import cb from './cb.jpeg';
+import hz from './hor.jpeg';
+
 
 const GAME_DATA = [
   {
     id: 1,
     title: "Elden Ring",
     genre: "Action RPG",
-    image: "https://images.pexels.com/photos/7919/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: ed,
     rating: 4.8,
     description: "An action RPG written by George R.R. Martin and developed by FromSoftware.",
     achievements: 32,
@@ -16,7 +23,7 @@ const GAME_DATA = [
     id: 2,
     title: "God of War Ragnarök",
     genre: "Action-Adventure",
-    image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: gow,
     rating: 4.9,
     description: "Continuation of Kratos and Atreus's journey through the nine realms of Norse mythology.",
     achievements: 45,
@@ -26,7 +33,7 @@ const GAME_DATA = [
     id: 3,
     title: "Red Dead Redemption 2",
     genre: "Action-Adventure",
-    image: "https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: rdr,
     rating: 4.7,
     description: "Epic tale of outlaw Arthur Morgan and the Van der Linde gang in America, 1899.",
     achievements: 51,
@@ -36,7 +43,7 @@ const GAME_DATA = [
     id: 4,
     title: "The Witcher 3",
     genre: "Action RPG",
-    image: "https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: tw,
     rating: 4.9,
     description: "Geralt of Rivia's quest to find his adopted daughter while fighting monsters and politics.",
     achievements: 78,
@@ -46,7 +53,7 @@ const GAME_DATA = [
     id: 5,
     title: "Cyberpunk 2077",
     genre: "Action RPG",
-    image: "https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: cb,
     rating: 4.0,
     description: "An open-world action-adventure set in the megalopolis of Night City.",
     achievements: 44,
@@ -56,7 +63,7 @@ const GAME_DATA = [
     id: 6,
     title: "Horizon Forbidden West",
     genre: "Action RPG",
-    image: "https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: hz,
     rating: 4.6,
     description: "Aloy's journey through a post-apocalyptic western United States to find the source of a mysterious plague.",
     achievements: 53,

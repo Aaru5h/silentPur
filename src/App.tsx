@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import useCursor from './hooks/useCursor';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import GamesPage from './components/GamesPage';
@@ -8,9 +7,6 @@ import Footer from './components/Footer';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
-  
-  // Initialize custom cursor
-  useCursor();
   
   const renderPage = () => {
     switch (currentPage) {
